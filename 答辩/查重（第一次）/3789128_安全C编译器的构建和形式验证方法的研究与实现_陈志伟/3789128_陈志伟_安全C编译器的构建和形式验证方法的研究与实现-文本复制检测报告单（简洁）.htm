@@ -1,0 +1,3940 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0060)http://check.cnki.net/vip/Report.aspx -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=10.000" 
+http-equiv="X-UA-Compatible">
+<LINK href="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/Advicement_index.css" 
+rel="stylesheet" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"><LINK href="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/calendar.css" 
+rel="stylesheet" type="text/css"><LINK href="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/form.css" 
+rel="stylesheet" type="text/css"><LINK href="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/login.css" 
+rel="stylesheet" type="text/css"><LINK href="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/sms.css" 
+rel="stylesheet" type="text/css"><LINK href="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/Style.css" 
+rel="stylesheet" type="text/css"><LINK href="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/TabbedPanels.css" 
+rel="stylesheet" type="text/css"><TITLE>
+	3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁） </TITLE>     
+<STYLE type="text/css">
+        a, a:visited
+        {
+            color: #2e2f2e;
+        }
+        a:hover
+        {
+            color: #800613;
+        }
+        .n_main
+        {
+            width: 640px;
+            min-height: 600px;
+            background-color: #FFF;
+            background-repeat: repeat-y;
+            height: auto !important;
+            margin: 0px auto 0 auto;
+        }
+        *
+        {
+            text-align: left;
+        }
+        html, body
+        {
+            text-align: left;
+            font-size: 12px;
+            color: #292929;
+            background: url(images/n_bg.gif) repeat;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        @media print
+        {
+            .n_print
+            {
+                display: none;
+            }
+        }
+        .n_table_prints
+        {
+            font-weight: bold;
+            font-size: 12px;
+            color: #2e2f2e;
+        }
+        .n_table_prints:hover
+        {
+            color: #760605;
+        }
+        .n_title
+        {
+            width: 640px;
+            margin: 12px auto;
+        }
+        .n_logo_left
+        {
+            text-align: left;
+            padding-left: 20px;
+        }
+        .n_logo_left img
+        {
+            border: none;
+        }
+        .n_logo_right img
+        {
+            border: none;
+        }
+        .n_bfb
+        {
+            font-weight: bold;
+        }
+        .n_logo_right
+        {
+            text-align: right;
+            padding-right: 20px;
+        }
+        .n_title_left
+        {
+            float: left;
+            width: 190px;
+            height: 46px;
+            background: url(images/jie_amlc.gif) no-repeat;
+            margin-left: 10px;
+            display: inline;
+        }
+        .n_title_right
+        {
+            float: right;
+            width: 185px;
+            height: 62px;
+            background: url(images/jie_zw.gif) no-repeat;
+            margin-right: 10px;
+            display: inline;
+        }
+        .n_bodytop
+        {
+            width: 640px;
+            margin: 0px auto;
+        }
+        .n_clear
+        {
+            clear: both;
+        }
+        .n_bt
+        {
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: solid 1px #035d03;
+            margin-bottom: 1px;
+        }
+        .n_jie
+        {
+            font-size: 12px;
+            font-weight: normal;
+        }
+        .n_no
+        {
+            height: 30px;
+            background: #f4f9ef;
+            width: 640px;
+            margin: 0px auto;
+            line-height: 30px;
+            color: #750606;
+            text-align: left;
+            font-size: 12px;
+        }
+        .n_bgd_k1
+        {
+            width: 640px;
+            height: auto;
+            padding-top: 10px;
+            font-size: 12px;
+        }
+        .n_yes
+        {
+            color: #dcaf29;
+        }
+        .n_table_a
+        {
+            color: #000;
+            font-size: 12px;
+            border: 0;
+            width: 100%;
+        }
+        .n_table_a_cos
+        {
+            background-color: #f4f9ef;
+            height: 26px;
+        }
+        .n_table_a_cosa
+        {
+            background-color: #f4f9ef;
+            height: 20px;
+        }
+        .n_text_green
+        {
+            color: #1a5f02;
+            text-align: right;
+            line-height: 26px;
+            font-weight: bold;
+        }
+        .n_text_block_b
+        {
+            line-height: 20px;
+            padding-left: 8px;
+            color: #7a7a7a;
+        }
+        .n_text_block_bm
+        {
+            line-height: 20px;
+            font-size: 12px;
+            text-align: left;
+        }
+        .n_text_block_a
+        {
+            text-align: left;
+            line-height: 26px;
+        }
+        .n_bgd_k2
+        {
+            font-size: 12px;
+        }
+        .n_table_b
+        {
+            width: 640px;
+            border-top: 2px #035d03 solid;
+        }
+        .n_text_Gm
+        {
+            color: #035d03;
+        }
+        .n_text_Gm a
+        {
+            color: #035d03;
+        }
+        .n_text_Gm a:hover
+        {
+            color: #7bab7c;
+        }
+        .s_new_hui
+        {
+            color: #666;
+        }
+        .n_text_red_a
+        {
+            color: #860505;
+            line-height: 26px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 10px;
+        }
+        .n_text_red_a_zb
+        {
+            color: #860505;
+            line-height: 26px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: left;
+            text-align: right;
+        }
+        .n_text_Gs
+        {
+            color: #860505;
+            border-top: 1px #035d03 dotted;
+        }
+        .n_table_b_cos
+        {
+            background: #f3f9ef;
+        }
+        .n_red_bold
+        {
+            color: #000;
+            font-weight: bold;
+        }
+        .n_text_block_b6
+        {
+            color: #7e7c7c;
+            font-weight: bold;
+            text-align: left;
+        }
+        .n_table_b1
+        {
+            background: #f3f9ef;
+        }
+        .n_table_a1
+        {
+            background: #f3f9ef;
+            line-height: 20px;
+            border-bottom: 1px #035d03 dotted;
+        }
+        .n_table_a2
+        {
+            background: #f3f9ef;
+            line-height: 20px;
+        }
+        .n_table_a3
+        {
+            background: #f3f9ef;
+            line-height: 25px;
+            border-bottom: 1px #035d03 solid;
+            border-top: 1px #035d03 solid;
+        }
+        .n_table_a3_l
+        {
+            text-align: right;
+        }
+        .n_table_a3_r
+        {
+            text-align: left;
+            font-weight: bold;
+        }
+        .n_table_a3_ra
+        {
+            color: #292929;
+        }
+        .n_table_a3_ra:hover
+        {
+            color: #750606;
+        }
+        .n_text_block_bs
+        {
+            text-align: left;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .n_text_block_bss
+        {
+            text-align: left;
+            color: #666;
+        }
+        .n_text_block_bsm
+        {
+            font-weight: bold;
+        }
+        .n_text_GT
+        {
+            border-bottom: 1px #035d03 dotted;
+            font-weight: bold;
+            padding-left: 6px;
+            color: #860505;
+        }
+        .n_text_GTs
+        {
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .n_qubr_fzb
+        {
+            border-bottom: 1px #1a5f02 solid;
+        }
+        .n_table_a_cosa
+        {
+            border-bottom: 1px #1a5f02 solid;
+        }
+        .n_biao
+        {
+            text-align: right;
+        }
+        .n_bgd_biao
+        {
+            width: 640px;
+        }
+        .n_text_block_a2 a
+        {
+            color: #292929;
+        }
+        .n_text_block_a2 a:hover
+        {
+            color: #860505;
+        }
+        .n_jcjg_a
+        {
+            width: 48px;
+            height: 17px;
+            background-image: url(images/pmlc12_icon1.gif);
+            background-repeat: no-repeat;
+            text-align: left;
+            line-height: 17px;
+            padding-left: 10px;
+            color: #333;
+        }
+        .n_jcjg_ap
+        {
+            width: 48px;
+            height: 17px;
+            background-image: url(images/n_re.gif);
+            background-repeat: no-repeat;
+            text-align: left;
+            line-height: 17px;
+            padding-left: 10px;
+            color: #333;
+        }
+        .n_jcjg_am
+        {
+            height: 17px;
+            background-image: url(images/n_ye.gif);
+            background-repeat: no-repeat;
+            text-align: left;
+            line-height: 17px;
+            color: #333;
+        }
+        .n_jcjg_al
+        {
+            width: 48px;
+            height: 17px;
+            background-image: url(images/n_jh.gif);
+            background-repeat: no-repeat;
+            text-align: left;
+            line-height: 17px;
+            padding-left: 10px;
+            color: #333;
+        }
+        .n_k3
+        {
+            background: #f7f7f7;
+            overflow: hidden;
+        }
+        .n_pic
+        {
+            width: 602px;
+            height: 15px;
+            margin: 5px auto 10px auto;
+        }
+        .n_table_zs
+        {
+            margin: 0px auto;
+        }
+        .n_bodymid
+        {
+            width: 640px;
+            margin: 0px auto;
+            font-size: 12px;
+            overflow: hidden;
+        }
+        .n_bodymid_bf
+        {
+            margin-top: 5px;
+        }
+        .n_table_jiebf
+        {
+            background: #f3f9ef;
+            border-top: 2px #035d03 solid;
+        }
+        .n_table_jiebfs
+        {
+            background: #f3f9ef;
+            border-top: 1px #ccc solid;
+            border-bottom: 1px #ccc solid;
+        }
+        .n_table_jiebf_zzs
+        {
+            padding-left: 40px;
+        }
+        .n_table_jiebf_fzb
+        {
+            font-weight: bold;
+            text-align: right;
+            color: #760605;
+            height: 25px;
+            line-height: 25px;
+        }
+        .n_jcjg_as
+        {
+            float: left;
+            width: 48px;
+            height: 17px;
+            background-image: url(images/pmlc12_icon1.gif);
+            background-repeat: no-repeat;
+            text-align: center;
+            line-height: 17px;
+            color: #333;
+        }
+        .n_xu
+        {
+            width: 640px;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: #CCCCCC;
+        }
+        .n_xu_a
+        {
+            width: 20px;
+            height: 20px;
+            background-color: #fcfaf1;
+            text-align: center;
+            border-bottom: 1px #ccc solid;
+            border-right: 1px #ccc solid;
+        }
+        .n_text_back_a
+        {
+            font-size: 12px;
+            text-align: center;
+            color: #333;
+            padding-left: 2px;
+            line-height: 20px;
+        }
+        .n_text_G2
+        {
+            color: #333;
+            font-size: 12px;
+            text-align: left;
+            padding-left: 8px;
+            line-height: 20px;
+        }
+        .n_text_G2 a
+        {
+            color: #2e2f2e;
+        }
+        .n_text_G2 a:hover
+        {
+            color: #800613;
+        }
+        .n_xu_a
+        {
+            width: 20px;
+            height: 20px;
+            background-color: #fcfaf1;
+            text-align: center;
+            border-right-width: 1px;
+            border-bottom-width: 1px;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-right-color: #CCCCCC;
+            border-bottom-color: #CCCCCC;
+        }
+        .n_text_red_d
+        {
+            color: #8b0411;
+            font-size: 12px;
+            text-align: center;
+        }
+        .n_xu_d
+        {
+            height: 20px;
+            text-align: center;
+            border-left-width: 1px;
+            border-left-style: solid;
+            border-left-color: #CCCCCC;
+            border-bottom: 1px #ccc dotted;
+        }
+        .n_xu_da
+        {
+            height: 20px;
+            text-align: center;
+            border-left-width: 1px;
+            border-left-style: solid;
+            border-left-color: #CCCCCC;
+            color: #7a7a7a;
+        }
+        .n_bodylast
+        {
+            width: 640px;
+            margin: 5px auto;
+            height: 30px;
+            background-color: #f3f9ef;
+        }
+        .n_bodyfooter
+        {
+            color: #666;
+            border-top: 2px #1b5e01 solid;
+            height: auto;
+            width: 640px;
+            margin: 5px auto;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .n_footer_sm
+        {
+            float: left;
+            font-weight: bold;
+        }
+        .n_footer_sms
+        {
+            float: left;
+        }
+        .n_footer_smr
+        {
+            float: right;
+        }
+        .n_footer_smr:hover
+        {
+            color: #800811;
+        }
+        .n_bodymid_ywnr
+        {
+            border-top: 1px #1b5e01 solid;
+            height: auto;
+            margin-top: 5px;
+        }
+        .n_table_ywtop
+        {
+            background: #ddf0ce;
+        }
+        .n_ywnr
+        {
+            height: 26px;
+            line-height: 26px;
+            font-weight: bold;
+            padding-left: 22px;
+        }
+        .n_ywnr_content
+        {
+            line-height: 180%;
+            height: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 5px;
+        }
+        .n_ywnr_content p
+        {
+            text-indent: 2em;
+            margin: 0px auto;
+        }
+        .n_ywnr_content p.n_new_hui
+        {
+            color: #666;
+        }
+        .n_ywnr_content p img
+        {
+            width: 550px;
+            height: 250px;
+        }
+        .n_new_red
+        {
+            color: red;
+        }
+        .n_new_ye
+        {
+            color: #e28a05;
+        }
+        .n_red
+        {
+        }
+        .red_font
+        {
+            color: #d90808;
+        }
+        .n_ymnr_bz
+        {
+            border-top: 1px #1b5e01 solid;
+            height: auto;
+        }
+        .n_ymnr_top
+        {
+            height: 26px;
+            background: #ddf0ce;
+            line-height: 26px;
+            font-weight: bold;
+            text-indent: 15px;
+        }
+        .n_ymnr_top_s
+        {
+            width: 620px;
+            margin: 5px auto;
+            background: #f7f7f7;
+        }
+        .n_table_bz_gd
+        {
+            background: #f7f7f7;
+            padding: 5px;
+            line-height: 150%;
+            color: #8b0411;
+        }
+        .n_table_bz_mark
+        {
+            background: #f7f7f7;
+            line-height: 25px;
+            font-weight: bold;
+            text-indent: 18px;
+        }
+        .n_jz
+        {
+            border-top: 1px #1b5e01 solid;
+            height: auto;
+        }
+        .n_jz_nr
+        {
+            background: #ddf0ce;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .n_jz_nrs
+        {
+            padding-left: 10px;
+            line-height: 180%;
+        }
+        .n_xzgf_bg
+        {
+            margin: 5px auto 5px 0px;
+        }
+        .n_xzgf_bgs
+        {
+            margin: 5px auto;
+        }
+        .content01
+        {
+            background: #ffffff;
+            line-height: 20px;
+            font-weight: bold;
+        }
+        .content02
+        {
+            text-align: center;
+            background: #ffffff;
+            line-height: 20px;
+        }
+        .content05
+        {
+            text-align: left;
+            background: #ffffff;
+            line-height: 20px;
+        }
+        .content03
+        {
+            background: #ffffff;
+            line-height: 20px;
+        }
+        .n_ywnr_pic
+        {
+            width: 482px;
+            margin: auto;
+        }
+        .n_table_bz_gds
+        {
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .n_ye
+        {
+            color: #aeb81b;
+        }
+        .n_sm
+        {
+            color: #000;
+            font-weight: bold;
+        }
+        .n_sm_tables
+        {
+            background: #f7f7f7;
+            line-height: 30px;
+        }
+        .n_dz
+        {
+            color: #2e2f2e;
+        }
+        .n_dz:hover
+        {
+            color: #79100d;
+            font-size: 12px;
+        }
+        .n_bgd_biao_b, .n_bgd_biao_bs
+        {
+            overflow: hidden;
+            background: #ddf0ce;
+            border-bottom: 1px #999 solid;
+            line-height: 26px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .n_bgd_biao_bs
+        {
+            border-left: 1px #999 solid;
+        }
+        .n_qwdz_ywnr
+        {
+            border-top: 1px #999 solid;
+            margin-top: 5px;
+        }
+        .n_text_red_ax
+        {
+            color: #860505;
+            line-height: 26px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .n_table_xu_a
+        {
+            width: 20px;
+            background: #fdfaf3;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px #999 solid;
+        }
+        .n_qwdz_k
+        {
+            background: #f3f9ef;
+            border-bottom: 1px #999 solid;
+        }
+        .n_bgd_biao_KU
+        {
+            overflow: hidden;
+            border-left: 1px #999 solid;
+            border-bottom: 1px #999 solid;
+        }
+        .n_bgd_biao_c
+        {
+            background: #fef4f5;
+            line-height: 150%;
+            padding: 5px;
+            margin: 5px;
+        }
+        .n_text_Gr
+        {
+            border-bottom: 1px #1d5e02 dotted;
+        }
+        .n_bgd_biao_KUa
+        {
+            margin: 6px;
+            margin-top: 0px;
+            line-height: 18px;
+        }
+        .n_bgd_biao_KUas
+        {
+            line-height: 180%;
+            text-align: center;
+        }
+        .n_bgd_biao_KUas a
+        {
+            color: #2e2f2e;
+        }
+        .n_bgd_biao_KUas a:hover
+        {
+            color: #7b100a;
+        }
+        .n_bgd_biao_KUm
+        {
+            font-weight: bold;
+            text-align: center;
+            background: #ddf0ce;
+            line-height: 26px;
+        }
+        .n_bgd_biao_KUr
+        {
+            height: auto;
+            min-height: 30px;
+            border-bottom: 1px #999 solid;
+            border-left: 1px #999 solid;
+        }
+        .n_bgd_biao_KUu
+        {
+            border-bottom: 1px #999 solid;
+        }
+        .n_qwdz_bz
+        {
+            line-height: 180%;
+            color: #d90808;
+        }
+        .n_qwdz_bz a
+        {
+            color: #2e2f2e;
+        }
+        .n_qwdz_bz a:hover
+        {
+            color: #7b100a;
+        }
+        .n_qwdz_xxdz
+        {
+            font-size: 12px;
+        }
+        .n_jcxxjg
+        {
+            font-weight: bold;
+            line-height: 25px;
+        }
+        .n_bgxxjc
+        {
+            background: #f3f9ef;
+            line-height: 30px;
+            border-top: 2px #1d5e02 solid;
+        }
+        .n_bz
+        {
+            font-weight: bold;
+        }
+        .n_bgxxjcs
+        {
+            text-align: center;
+            padding: 5px;
+        }
+        .n_bgxxjcm
+        {
+            background: #fef4f5;
+            line-height: 18px;
+        }
+        .n_pic_dz
+        {
+            text-align: right;
+        }
+        .n_bf_bt
+        {
+            text-align: center;
+            font-weight: bold;
+        }
+        .n_table_bz_gdh
+        {
+            color: #2d2d2c;
+            height: 20px;
+            line-height: 20px;
+            text-indent: 18px;
+            font-weight: bold;
+            border-bottom: 1px #1b5e01 dotted;
+        }
+        .n_table_pqbt
+        {
+            font-weight: bold;
+            text-align: center;
+        }
+        .n_new_czb
+        {
+            text-align: center;
+        }
+        .n_new_czb_red
+        {
+            text-align: center;
+            color: #ff0000;
+        }
+        .n_new_bgl
+        {
+            font-weight: bold;
+            text-align: right;
+            line-height: 22px;
+        }
+        .n_text_block_b6 a
+        {
+            color: #860505;
+        }
+        .n_text_block_b6 a:hover
+        {
+            color: #860505;
+        }
+        .n_new_pqgdims
+        {
+            background: #f3f9ef;
+            font-weight: bold;
+            padding-left: 10px;
+            border-top: 2px #1a5f02 solid;
+            line-height: 25px;
+        }
+        .n_new_pqgdimx
+        {
+            width: 620px;
+            margin: 5px auto;
+            background: #f7f7f7;
+        }
+        .n_new_bg_lb table
+        {
+            text-align: left;
+        }
+        .n_new_bgx
+        {
+            border-bottom: 1px #1d5e02 dotted;
+        }
+        .n_new_bgx img
+        {
+            float: left;
+        }
+        .n_new_pqgd_lie
+        {
+            text-align: right;
+        }
+        .n_sms a
+        {
+            color: #666;
+        }
+        .n_sms a:hover
+        {
+            color: #90050b;
+        }
+        /******************全文*******************/.n_qwdz_ywnr
+        {
+            border-top: 1px #999 solid;
+            margin-top: 5px;
+        }
+        .qw_bgd_biao
+        {
+            width: 640px;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        .qw_bgd_biao_b
+        {
+            height: 25px;
+            text-align: center;
+            border-top: 1px solid #999;
+            border-right: 1px solid #999;
+            border-bottom: 1px solid #999;
+            line-height: 25px;
+            background-color: #DDF0CE;
+            color: #000;
+        }
+        .qw_bgd_biao_bs
+        {
+            height: 25px;
+            text-align: center;
+            border-top: 1px solid #999;
+            border-left: 1px solid #999;
+            border-bottom: 1px solid #999;
+            line-height: 25px;
+            background-color: #DDF0CE;
+            color: #000;
+        }
+        .qw_bgd_biao_KU
+        {
+            border-right: 1px solid #999;
+            border-bottom: 1px solid #999;
+            padding-left: 5px;
+            padding-right: 5px;
+            vertical-align: top;
+            text-align: left;
+        }
+        .qw_bgd_biao_KUa
+        {
+            width: 280px;
+            padding: 5px;
+            vertical-align: top;
+            text-align: left;
+        }
+        .qw_text_red_b
+        {
+            color: #d90808;
+            line-height: 20px;
+            font-size: 12px;
+            text-align: left;
+        }
+        .qw_bgd_biao_c
+        {
+            line-height: 18px;
+            background-color: #FDF4F2;
+            text-align: left;
+            margin-top: 5px;
+            color: #000;
+        }
+        .qw_table_xu_a
+        {
+            background-color: #fcfaf1;
+            text-align: center;
+            border-right: 1px dashed #999;
+            border-top: 1px solid #999;
+            border-left: 1px solid #999;
+            border-bottom: 1px solid #999;
+        }
+        .qw_table_xu_b
+        {
+            width: 18px;
+            background-color: #DDF0CE;
+            text-align: center;
+            border-top: 1px solid #999;
+            border-left: 1px solid #999;
+            border-bottom: 1px solid #999;
+        }
+        .qw_text_red_ax
+        {
+            color: #860505;
+            line-height: 26px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            padding-left: 10px;
+        }
+        /******************全文*******************/.table_check_rsR table
+        {
+            border: solid 1px #cccccc;
+            border-collapse: collapse;
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+        .table_check_rsR table td, th
+        {
+            border: solid 1px #cccccc;
+            padding: 0px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .t_text_red_a
+        {
+            color: #920e0a;
+        }
+        .Font_Color_Red
+        {
+            text-decoration: underline;
+        }
+        .Font_Color_Green
+        {
+            text-decoration: underline;
+            font-style: oblique;
+        }
+        .item_title
+        {
+            border-top: 2px #035d03 solid;
+            font-size: 14px;
+            font-weight: bold;
+            padding-left: 10px;
+            line-height: 24px;
+            background-color: #f4f9ef;
+        }
+        .n_text_green_normal
+        {
+            color: #1a5f02;
+            line-height: 26px;
+        }
+        a.maxlink
+        {
+            color: #860505;
+        }
+        a.maxlink:visited
+        {
+            color: #860505;
+        }
+    </STYLE>
+ 
+<META name="GENERATOR" content="MSHTML 10.00.9200.17609"></HEAD> 
+<BODY>
+<FORM name="form1" id="form1" action="Report.aspx?LeftFile=100091783&amp;t=p" 
+method="post">
+<DIV><INPUT name="__VIEWSTATE" id="__VIEWSTATE" type="hidden" value="RFLRUqF0gaRj6c80hLt1ww5gwUJbNdU3TROvn35Zy/JTI6QbZDA1Ny557Qohv2y4EzV/mn0AvEll4eEzIWwNIO0yRYPbeGo8FMQwTRJT1GJ+xlxtchzTWwYyxaU="> 
+</DIV>
+<DIV><INPUT name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" type="hidden" 
+value="163EF654"> </DIV>
+<DIV class="n_main">
+<DIV class="n_title">
+<DIV class="n_print">
+<TABLE width="640" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="700"></TD>
+    <TD width="25"><IMG alt="" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/n_btn_print.gif"> 
+                              </TD>
+    <TD width="60"><A class="n_table_prints" href="javascript:print();">打印</A> 
+                              </TD>
+    <TD width="25"><IMG alt="" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/n_btn_save.gif"> 
+                              </TD>
+    <TD width="60">
+      <OBJECT name="wb" width="0" height="0" id="wb" classid="CLSID:8856F961-340A-11D0-A96B-00C04FD705A2" 
+      style="display: none;"></OBJECT>                             
+<SCRIPT type="text/javascript">
+                                function s() {
+                                    var obj = document.getElementById('wb');
+
+                                    try {
+                                        if (obj != null) {
+                                            obj.ExecWB(4, 1);
+                                        }
+                                    }
+                                    catch (add) {
+
+                                    }
+                                }
+                            </SCRIPT>
+                                   <A class="n_table_prints" href="javascript:s();">保存</A> 
+                              </TD></TR></TBODY></TABLE></DIV>
+<TABLE width="640" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD class="n_logo_left"><A href="http://check.cnki.net/" 
+      target="_blank"><IMG alt="" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/jie_amlc.gif"></A> 
+                          </TD>
+    <TD class="n_logo_right"><A href="http://check.cnki.net/" 
+      target="_blank"><IMG alt="" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/jie_zw.gif"></A> 
+                          </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_bodytop">
+<DIV class="n_bt">文本复制检测报告单<SPAN class="n_jie">（<SPAN id="Label_Report_Type_Name">简洁</SPAN>）</SPAN></DIV>
+<TABLE width="100%" class="n_table_a" style="border-top-color: rgb(3, 93, 3); border-top-width: 2px; border-top-style: solid;" 
+border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR class="n_table_a_cos">
+    <TD colspan="2">
+      <TABLE width="640" border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="420" class="n_text_red_a">№:<SPAN 
+            id="Label_ReportID">ADBD2017R_20161031105542201701162210031000917832673</SPAN> 
+                                                                                
+          </TD>
+          <TD width="60" class="t_text_red_a">检测时间：                            
+                 </TD>
+          <TD><SPAN id="Label_Apply_Time">2017-01-16 22:10:03</SPAN>           
+                                  </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class="n_text_green" style="width: 100px;">检测文献：                     
+    </TD>
+    <TD class="n_text_block_a" style="width: 539px;"><SPAN 
+      id="Label_Title">3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现</SPAN>                 
+          </TD></TR>
+  <TR>
+    <TD class="n_text_green" style="width: 100px;">                        作者： 
+                          </TD>
+    <TD class="n_text_block_a"><SPAN id="Label_Author">陈志伟</SPAN>              
+             </TD></TR>
+  <TR>
+    <TD class="n_text_green" style="width: 100px; vertical-align: top;">       
+                       检测范围：                     </TD>
+    <TD class="n_text_block_bm"><SPAN 
+      id="Label_Check_Range">中国学术期刊网络出版总库<BR>中国博士学位论文全文数据库/中国优秀硕士学位论文全文数据库<BR>中国重要会议论文全文数据库<BR>中国重要报纸全文数据库<BR>中国专利全文数据库<BR>互联网资源(包含贴吧等论坛资源)<BR>英文数据库(涵盖期刊、博硕、会议的英文数据以及德国Springer、英国Taylor&amp;Francis 
+      期刊数据库等)<BR>港澳台学术文献库<BR>优先出版文献库<BR>互联网文档资源<BR>图书资源<BR>CNKI大成编客-原创作品库<BR>学术论文联合比对库<BR>个人比对库</SPAN> 
+                          </TD></TR>
+  <TR>
+    <TD class="n_text_green" style="width: 100px;">                        
+      时间范围：                     </TD>
+    <TD class="n_text_block_a"><SPAN 
+      id="Label_Time_Range">1900-01-01至2017-01-16</SPAN>                     
+  </TD></TR></TBODY></TABLE>
+<DIV class="item_title">检测结果</DIV>
+<DIV class="n_bgd_k2">
+<TABLE width="640" class="n_table_b" id="p1" border="0" cellspacing="0" 
+cellpadding="0">
+  <TBODY>
+  <TR class="n_table_b_cos">
+    <TD width="95" class="n_text_red_a">总文字复制比：                         </TD>
+    <TD width="95"><SPAN id="Label_AllCopy">
+      <DIV title="文字复制比" class="per_o">8.5%</DIV></SPAN>                         
+    </TD>
+    <TD width="105" class="n_text_red_a">跨语言检测结果：                         </TD>
+    <TD style="text-align: left;"><SPAN id="Label_CE">
+      <DIV title="文字复制比" class="per_g">0%</DIV></SPAN>                         
+    </TD></TR></TBODY></TABLE>
+<TABLE width="640" id="Table2" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR class="n_table_b_cos">
+    <TD width="26" height="25"><IMG style="border: currentColor;" alt="" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/jie_yins.gif"> 
+                              </TD>
+    <TD width="184" class="n_text_block_b6">去除引用文献复制比：<SPAN 
+      class="n_red_bold"><SPAN id="Label_Quote">8.5%</SPAN></SPAN>               
+                </TD>
+    <TD width="27"><IMG style="border: currentColor;" alt="" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/jie_bens.gif"> 
+                              </TD>
+    <TD class="n_text_block_b6">去除本人已发表文献复制比：<SPAN class="n_red_bold"><SPAN 
+      id="Label_SameAuthor">8.5%</SPAN></SPAN>                         
+  </TD></TR></TBODY></TABLE>
+<TABLE width="640" id="Table3" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR class="n_table_b_cos">
+    <TD width="26"><IMG style="border: currentColor;" alt="" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/jie_dans.gif"> 
+                              </TD>
+    <TD class="n_text_block_b6" colspan="3">单篇最大文字复制比：<SPAN 
+      class="n_red_bold"><SPAN 
+      id="Label_Single_Max_Similar">2.4%</SPAN></SPAN><A class="maxlink" id="HyperLink_MaxCopy" 
+      href="http://www.cnki.net/kcms/detail/detail.aspx?filename=KXTS201101002&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">（可信编译理论及其核心实现技术:研究综述）</A>                         
+  </TD></TR></TBODY></TABLE>
+<TABLE width="640" class="n_table_a1" border="0" cellspacing="0" 
+cellpadding="0">
+  <TBODY>
+  <TR class="n_qubr_fzb">
+    <TD width="52" height="25" class="n_text_Gm">                            
+      &nbsp;                        </TD>
+    <TD width="158" class="n_text_Gm">重复字数：<SPAN 
+      class="n_text_block_bss">&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<SPAN id="Label_All_CopyWords">6413</SPAN> 
+                                     &nbsp;]</SPAN>                         </TD>
+    <TD width="176" class="n_text_Gm">总字数：<SPAN 
+      class="n_text_block_bss">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<SPAN 
+      id="Label_All_Words">75626</SPAN>&nbsp;]</SPAN>                         
+</TD>
+    <TD width="133" class="n_text_Gm"><SPAN id="Label1">单篇最大重复字数：</SPAN>       
+                        </TD>
+    <TD width="110" class="n_text_Gm"><SPAN 
+      class="n_text_block_bss">[&nbsp;<SPAN 
+      id="Label_Single_Max_Length">1828</SPAN>&nbsp;]</SPAN>                     
+          </TD></TR>
+  <TR class="n_qubr_fzb">
+    <TD width="52" height="25" class="n_text_Gm">                            
+      &nbsp;                        </TD>
+    <TD width="158" class="n_text_Gm">总段落数：<SPAN 
+      class="n_text_block_bss">&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<SPAN id="Label_All_Section">9</SPAN> 
+                                     &nbsp;]</SPAN>                         </TD>
+    <TD width="176" class="n_text_Gm">前部重合字数：<SPAN 
+      class="n_text_block_bss">[&nbsp;<SPAN 
+      id="lb_qcf">4220</SPAN>&nbsp;]</SPAN>                         </TD>
+    <TD width="133" class="n_text_Gm"><SPAN id="Label2">疑似段落最大重合字数：</SPAN>     
+                          </TD>
+    <TD width="110" class="n_text_Gm"><SPAN 
+      class="n_text_block_bss">[&nbsp;<SPAN 
+      id="lb_yszdcf">3396</SPAN>&nbsp;]</SPAN>                         </TD></TR>
+  <TR class="n_qubr_fzb">
+    <TD width="52" height="25" class="n_text_Gm">                            
+      &nbsp;                        </TD>
+    <TD width="158" class="n_text_Gm">疑似段落数：<SPAN 
+      class="n_text_block_bss">[&nbsp;<SPAN id="lb_yszj">8</SPAN>                
+                      &nbsp;]</SPAN>                         </TD>
+    <TD width="176" class="n_text_Gm">后部重合字数：<SPAN 
+      class="n_text_block_bss">[&nbsp;<SPAN 
+      id="lb_hcf">2193</SPAN>&nbsp;]</SPAN>                         </TD>
+    <TD width="243" class="n_text_Gm" colspan="2">
+      <DIV id="danpian">疑似段落最小重合字数：&nbsp;<SPAN 
+      class="n_text_block_bss">[&nbsp;<SPAN 
+      id="lb_yszxcf">41</SPAN>&nbsp;]</SPAN>                             
+    </DIV></TD></TR></TBODY></TABLE>
+<TABLE width="640" class="n_table_a2" border="0" cellspacing="0" 
+cellpadding="0">
+  <TBODY>
+  <TR class="n_qubr_fzb">
+    <TD width="101" height="25" 
+      class="n_text_red_a_zb">指&nbsp;&nbsp;&nbsp;&nbsp;标：                        
+     </TD>
+    <TD width="20"><IMG id="Image_Standard5" style="border-width: 0px;" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/you.gif"> 
+                              </TD>
+    <TD width="80" class="n_text_Gm">                            疑似剽窃观点        
+                       </TD>
+    <TD width="20"><IMG id="Image_Standard4" style="border-width: 0px;" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/you.gif"> 
+                              </TD>
+    <TD width="110" class="n_text_Gm ">                            疑似剽窃文字表述    
+                           </TD>
+    <TD width="20"><IMG id="Image_Standard3" style="border-width: 0px;" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/wu.gif"> 
+                              </TD>
+    <TD width="90" class="n_text_Gm ">                            疑似自我剽窃       
+                        </TD>
+    <TD width="20"></TD>
+    <TD class="n_text_Gm "></TD></TR>
+  <TR class="n_qubr_fzb">
+    <TD>&nbsp;                        </TD>
+    <TD><IMG id="Image_Standard7" style="border-width: 0px;" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/wu.gif"> 
+                              </TD>
+    <TD class="n_text_Gm">过度引用                         </TD>
+    <TD><IMG id="Image_Standard1" style="border-width: 0px;" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/wu.gif"> 
+                              </TD>
+    <TD class="n_text_Gm ">                            疑似整体剽窃                  
+             </TD>
+    <TD colspan="4"></TD></TR></TBODY></TABLE>
+<TABLE width="640" class="n_table_a3" border="0" cellspacing="0" 
+cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="86" class="n_table_a3_l">表格：                         </TD>
+    <TD width="73" class="n_table_a3_r"><SPAN id="Label_Table_Number">0</SPAN> 
+                              </TD>
+    <TD width="90" class="n_table_a3_l">脚注与尾注：                         </TD>
+    <TD width="70" class="n_table_a3_r"><SPAN id="Label_Note_Number">0</SPAN>  
+                             </TD>
+    <TD width="100" class="n_table_a3_l"></TD>
+    <TD width="220" class="n_table_a3_r"></TD>
+    <TD></TD></TR></TBODY></TABLE>
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" height="25">                                    &nbsp;      
+                                </TD>
+    <TD style="width: 58px; text-align: left;">
+      <DIV class="per_y">3.9%</DIV></TD>
+    <TD width="50" align="left">                                    (123)      
+                                 </TD>
+    <TD class="n_text_block_a2"><A href="http://check.cnki.net/vip/Report.aspx?LeftFile=100091783&amp;t=p#100091783_000">中英文摘要等</A> 
+      （总3192字）                                 </TD></TR>
+  <TR>
+    <TD width="20" height="25">&nbsp;                                </TD>
+    <TD style="width: 58px; text-align: left;">
+      <DIV class="per_y">19.3%</DIV></TD>
+    <TD width="50" align="left">                                    (1459)     
+                                  </TD>
+    <TD class="n_text_block_a2"><A href="http://check.cnki.net/vip/Report.aspx?LeftFile=100091783&amp;t=p#100091783_001">第一章绪论</A> 
+      （总7574字）                                 </TD></TR>
+  <TR>
+    <TD width="20" height="25">&nbsp;                                </TD>
+    <TD style="width: 58px; text-align: left;">
+      <DIV class="per_r">56.5%</DIV></TD>
+    <TD width="50" align="left">                                    (3396)     
+                                  </TD>
+    <TD class="n_text_block_a2"><A href="http://check.cnki.net/vip/Report.aspx?LeftFile=100091783&amp;t=p#100091783_002">第二章形式化验证方法关键技术研究</A> 
+      （总6010字）                                 </TD></TR>
+  <TR>
+    <TD width="20" height="25">&nbsp;                                </TD>
+    <TD style="width: 58px; text-align: left;">
+      <DIV class="per_y">4.2%</DIV></TD>
+    <TD width="50" align="left">                                    (451)      
+                                 </TD>
+    <TD class="n_text_block_a2"><A href="http://check.cnki.net/vip/Report.aspx?LeftFile=100091783&amp;t=p#100091783_003">第三章编译形式化验证与安全C编译器构建的设计_第1部分</A> 
+      （总10640字）                                 </TD></TR>
+  <TR>
+    <TD width="20" height="25">                                    &nbsp;      
+                                </TD>
+    <TD style="width: 58px; text-align: left;">
+      <DIV class="per_g">0%</DIV></TD>
+    <TD width="50" align="left">                                    (0)        
+                               </TD>
+    <TD class="n_text_block_a2"><A href="http://check.cnki.net/vip/Report.aspx?LeftFile=100091783&amp;t=p#100091783_004">第三章编译形式化验证与安全C编译器构建的设计_第2部分</A> 
+      （总2094字）                                 </TD></TR>
+  <TR>
+    <TD width="20" height="25">&nbsp;                                </TD>
+    <TD style="width: 58px; text-align: left;">
+      <DIV class="per_y">1.5%</DIV></TD>
+    <TD width="50" align="left">                                    (191)      
+                                 </TD>
+    <TD class="n_text_block_a2"><A href="http://check.cnki.net/vip/Report.aspx?LeftFile=100091783&amp;t=p#100091783_005">第四章_第1部分</A> 
+      （总12639字）                                 </TD></TR>
+  <TR>
+    <TD width="20" height="25">&nbsp;                                </TD>
+    <TD style="width: 58px; text-align: left;">
+      <DIV class="per_y">0.9%</DIV></TD>
+    <TD width="50" align="left">                                    (53)       
+                                </TD>
+    <TD class="n_text_block_a2"><A href="http://check.cnki.net/vip/Report.aspx?LeftFile=100091783&amp;t=p#100091783_006">第四章_第2部分</A> 
+      （总6230字）                                 </TD></TR>
+  <TR>
+    <TD width="20" height="25">&nbsp;                                </TD>
+    <TD style="width: 58px; text-align: left;">
+      <DIV class="per_y">0.3%</DIV></TD>
+    <TD width="50" align="left">                                    (41)       
+                                </TD>
+    <TD class="n_text_block_a2"><A href="http://check.cnki.net/vip/Report.aspx?LeftFile=100091783&amp;t=p#100091783_007">第五章编译验证工具的设计与实现_第1部分</A> 
+      （总11801字）                                 </TD></TR>
+  <TR>
+    <TD width="20" height="25">&nbsp;                                </TD>
+    <TD style="width: 58px; text-align: left;">
+      <DIV class="per_y">4.5%</DIV></TD>
+    <TD width="50" align="left">                                    (699)      
+                                 </TD>
+    <TD class="n_text_block_a2"><A href="http://check.cnki.net/vip/Report.aspx?LeftFile=100091783&amp;t=p#100091783_008">第五章编译验证工具的设计与实现_第2部分</A> 
+      （总15446字）                                 </TD></TR></TBODY></TABLE></DIV></DIV><!--------------------------------------------以上为公共部分-------------------------------------------> 
+        
+<DIV class="n_bodymid" style="margin-top: 15px;">
+<DIV class="n_bodymid_bf">
+<TABLE width="640" class="n_table_jiebf" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="25" height="30" class="n_bf_bt">                                
+          1.                                 </TD>
+    <TD width="499" class="n_text_block_bs"><A name="100091783_000"></A>       
+                                    中英文摘要等                                 </TD>
+    <TD width="116" class="n_table_jiebf_zzs">                                 
+         总字数：<SPAN class="n_text_block_bs">3192</SPAN>                           
+            </TD></TR>
+  <TR>
+    <TD colspan="3">
+      <TABLE width="640" class="n_table_jiebfs" border="0" cellspacing="0" 
+      cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="90" style="text-indent: 1em;"><SPAN id="Repeater1_ctl00_Label_SList_Word">相似文献列表</SPAN> 
+                                                        </TD>
+          <TD width="100" class="n_table_jiebf_fzb">                           
+                                 文字复制比：                                          
+               </TD>
+          <TD width="150">
+            <DIV class="n_jcjg_am">3.9%(123)</DIV></TD>
+          <TD class="n_table_jiebf_fzb" style="text-align: left;">疑似剽窃观点（0）    
+                                                     
+  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       1                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1013115893.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">逻辑控制的安全检验技术研究</A>                                          
+         </TD>
+    <TD class="n_xu_d n_text_red_d">1.9%（62）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               田丰齐(导师：卢绍文)                                                 - 
+      《东北大学硕士论文》-                                                 2010-06-30     
+                                              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       2                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=QBZH201304004&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">可信软件研究</A>                                             </TD>
+    <TD class="n_xu_d n_text_red_d">1.7%（55）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               俞烈彬;王立杰;                                                 - 
+      《指挥控制与仿真》-                                                 2013-08-15      
+                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       3                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=DZXU2003S1000&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">高可信软件工程技术</A>                                             
+    </TD>
+    <TD class="n_xu_d n_text_red_d">1.7%（55）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               陈火旺,王戟,董威                                                 - 
+      《电子学报》-                                                 2003-12-30         
+                                          </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       4                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=2010165211.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">一种监控探针描述语言及其编译器的设计与实现</A>                                  
+                 </TD>
+    <TD class="n_xu_d n_text_red_d">1.7%（55）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               王涛(导师：邹鹏)                                                 - 
+      《国防科学技术大学硕士论文》-                                                 2009-11-01 
+                                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       5                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=2010133425.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=" 
+      target="_blank">低级并行代码中几种同步机制的验证</A>                                       
+            </TD>
+    <TD class="n_xu_d n_text_red_d">                                           
+           1.7%（55）                                             </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">付明(导师：陈意云;张昱)                          
+                             - 《中国科学技术大学博士论文》-                                   
+                    2009-04-01                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       6                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=2008097935.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">基于监控的可信软件构造技术研究与实现</A>                                     
+              </TD>
+    <TD class="n_xu_d n_text_red_d">1.2%（38）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               李仁杰(导师：王怀民;郭长国)                                                 - 
+      《国防科学技术大学硕士论文》-                                                 2007-11-01 
+                                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       7                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=KXTS201101002&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">可信编译理论及其核心实现技术:研究综述</A>                                    
+               </TD>
+    <TD class="n_xu_d n_text_red_d">1.2%（37）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               何炎祥;吴伟;刘陶;李清安;陈勇;胡明昊;刘健博;石谦;                                      
+                 - 《计算机科学与探索》-                                                 
+      2011-01-15                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       8                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">可信编译理论及其核心实现技术研究综述 - 豆丁网        
+                                           </TD>
+    <TD class="n_xu_d n_text_red_d">1.2%（37）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://www.docin.com/p-155522094.html" 
+      target="_blank">http://www.docin.com/p-155522094.html</A>）》-               
+                                        2015                                     
+              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       9                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=2009033866.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=" 
+      target="_blank">基于模拟理论的模型检测研究</A>                                          
+         </TD>
+    <TD class="n_xu_d n_text_red_d">1.0%（33）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               袁志斌(导师：王能超;徐正权)                                                 - 
+      《华中科技大学博士论文》-                                                 2007-11-01   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       10                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=GZDN200807024&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">软件开发的形式化方法</A>                                             
+    </TD>
+    <TD class="n_xu_d n_text_red_d">1.0%（32）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               袁志斌;                                                 - 《电脑与电信》-   
+                                                    2008-07-10                   
+                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       11                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">卫星导航                            
+                       </TD>
+    <TD class="n_xu_d n_text_red_d">1.0%（32）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《学术论文联合比对库》-                         
+                              2014-03-07                                         
+          </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class="n_qwdz_ywnr">
+<TABLE class="n_bgd_biao" id="table_item_list" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE>
+<TABLE class="n_bgd_biao" id="table1" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE></DIV>
+<DIV class="n_bodymid_bf">
+<TABLE width="640" class="n_table_jiebf" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="25" height="30" class="n_bf_bt">                                
+          2.                                 </TD>
+    <TD width="499" class="n_text_block_bs"><A name="100091783_001"></A>       
+                                    第一章绪论                                 </TD>
+    <TD width="116" class="n_table_jiebf_zzs">总字数：<SPAN class="n_text_block_bs">7574</SPAN> 
+                                      </TD></TR>
+  <TR>
+    <TD colspan="3">
+      <TABLE width="640" class="n_table_jiebfs" border="0" cellspacing="0" 
+      cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="90" style="text-indent: 1em;"><SPAN id="Repeater1_ctl01_Label_SList_Word">相似文献列表</SPAN> 
+                                                        </TD>
+          <TD width="100" class="n_table_jiebf_fzb">                           
+                                 文字复制比：                                          
+               </TD>
+          <TD width="150">
+            <DIV class="n_jcjg_am">19.3%(1459)</DIV></TD>
+          <TD class="n_table_jiebf_fzb" style="text-align: left;">疑似剽窃观点（1）    
+                                                     
+  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       1                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      06_SY1206301_尹顺顺                                           
+        </TD>
+    <TD class="n_xu_d n_text_red_d">5.2%（394）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               尹顺顺                                                 - 
+      《学术论文联合比对库》-                                                 2014-11-25    
+                                               </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       2                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      06_SY1206310_王琦                                            
+     </TD>
+    <TD class="n_xu_d n_text_red_d">4.7%（358）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               王琦                                                 - 《学术论文联合比对库》- 
+                                                      2014-11-24                 
+                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       3                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=KXTS201101002&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">可信编译理论及其核心实现技术:研究综述</A>                                    
+               </TD>
+    <TD class="n_xu_d n_text_red_d">                                           
+           4.6%（348）                                             </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">何炎祥;吴伟;刘陶;李清安;陈勇;胡明昊;刘健博;石谦;           
+                                            - 《计算机科学与探索》-                        
+                               2011-01-15                                        
+           </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       4                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">可信编译理论及其核心实现技术研究综述 - 豆丁网        
+                                           </TD>
+    <TD class="n_xu_d n_text_red_d">4.6%（348）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://www.docin.com/p-155522094.html" 
+      target="_blank">http://www.docin.com/p-155522094.html</A>）》-               
+                                        2015                                     
+              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       5                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      06_ZY1206128_吴文娟                                           
+        </TD>
+    <TD class="n_xu_d n_text_red_d">3.9%（292）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               吴文娟                                                 - 
+      《学术论文联合比对库》-                                                 2014-11-21    
+                                               </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       6                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=HKXB201205005&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">面向适航认证的模型驱动机载软件构件的安全性验证</A>                                
+                   </TD>
+    <TD class="n_xu_d n_text_red_d">2.2%（170）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               徐丙凤;黄志球;胡军;于笑丰;                                                 - 
+      《航空学报》-                                                 2012-02-01 0       
+                                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       7                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">学习MISRA C之一:“安全第一”的C语言编程规范      
+                                             </TD>
+    <TD class="n_xu_d n_text_red_d">2.1%（162）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://www.upsdn.net/html/2006-10/741.html" 
+      target="_blank">http://www.upsdn.net/html/2006-10/741.html</A>）》-          
+                                             2008                                
+                   </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       8                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">“安全第一”的C语言编程规范-百度文库             
+                                      </TD>
+    <TD class="n_xu_d n_text_red_d">2.1%（162）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://wenku.baidu.com/view/226233c25fbfc77da269b197.html" 
+      target="_blank">http://wenku.baidu.com/view/226233c25fbfc77da269b197.html</A>）》- 
+                                                      2012                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       9                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      C安全规范-百度文库                                             </TD>
+    <TD class="n_xu_d n_text_red_d">2.1%（162）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://wenku.baidu.com/view/3c4e284a767f5acfa1c7cd59.html" 
+      target="_blank">http://wenku.baidu.com/view/3c4e284a767f5acfa1c7cd59.html</A>）》- 
+                                                      2012                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       10                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">“安全第一”的6语言编程规范 - 豆丁网            
+                                       </TD>
+    <TD class="n_xu_d n_text_red_d">2.0%（148）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://www.docin.com/p-81221502.html" 
+      target="_blank">http://www.docin.com/p-81221502.html</A>）》-                
+                                       2012                                      
+             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       11                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=DPJY200601027&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">“安全第一”的C语言编程规范</A>                                         
+          </TD>
+    <TD class="n_xu_d n_text_red_d">1.9%（143）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               陈萌萌;邵贝贝;                                                 - 
+      《单片机与嵌入式系统应用》-                                                 2006-01-01  
+                                                 </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       12                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JFYZ201507014&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">软件模型检测中的抽象模型研究综述</A>                                       
+            </TD>
+    <TD class="n_xu_d n_text_red_d">1.8%（136）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               魏欧;石玉峰;徐丙凤;黄志球;陈哲;                                                
+       - 《计算机研究与发展》-                                                 2015-07-15  
+                                                 </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       13                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JSJA201604035&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">基于特征切片的软件产品线模型检测</A>                                       
+            </TD>
+    <TD class="n_xu_d n_text_red_d">1.7%（130）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               刘玉梅;魏欧;黄鸣宇;                                                 - 
+      《计算机科学》-                                                 2016-04-15        
+                                           </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       14                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JSJA201502037&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">基于双格的软件产品线模型检测</A>                                         
+          </TD>
+    <TD class="n_xu_d n_text_red_d">1.7%（130）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               石玉峰;魏欧;周宇;                                                 - 
+      《计算机科学》-                                                 2015-02-15        
+                                           </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       15                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JSJA201309007&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">一个C语言安全子集的可信编译器</A>                                        
+           </TD>
+    <TD class="n_xu_d n_text_red_d">1.5%（111）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               王蕾;石刚;董渊;白晓颖;王生原;                                                 
+      - 《计算机科学》-                                                 2013-09-15      
+                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       16                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=QBZH201304004&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">可信软件研究</A>                                             </TD>
+    <TD class="n_xu_d n_text_red_d">0.7%（55）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               俞烈彬;王立杰;                                                 - 
+      《指挥控制与仿真》-                                                 2013-08-15      
+                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       17                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=DZXU2003S1000&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">高可信软件工程技术</A>                                             
+    </TD>
+    <TD class="n_xu_d n_text_red_d">0.7%（55）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               陈火旺,王戟,董威                                                 - 
+      《电子学报》-                                                 2003-12-30         
+                                          </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       18                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=PZKX201002002&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">可信计算的研究与发展</A>                                             
+    </TD>
+    <TD class="n_xu_d n_text_red_d">0.5%（37）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               沈昌祥;张焕国;王怀民;王戟;赵波;严飞;余发江;张立强;徐明迪;                                 
+                      - 《中国科学:信息科学》-                                             
+          2010-02-15                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       19                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=GZDN200807024&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">软件开发的形式化方法</A>                                             
+    </TD>
+    <TD class="n_xu_d n_text_red_d">0.4%（32）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               袁志斌;                                                 - 《电脑与电信》-   
+                                                    2008-07-10                   
+                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class="n_qwdz_ywnr">
+<TABLE class="n_bgd_biao" id="table_item_list" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE>
+<TABLE class="n_bgd_biao" id="table1" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE></DIV>
+<DIV class="n_bodymid_bf">
+<TABLE width="640" class="n_table_jiebf" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="25" height="30" class="n_bf_bt">                                
+          3.                                 </TD>
+    <TD width="499" class="n_text_block_bs"><A name="100091783_002"></A>       
+                                    第二章形式化验证方法关键技术研究                             
+          </TD>
+    <TD width="116" class="n_table_jiebf_zzs">                                 
+         总字数：<SPAN class="n_text_block_bs">6010</SPAN>                           
+            </TD></TR>
+  <TR>
+    <TD colspan="3">
+      <TABLE width="640" class="n_table_jiebfs" border="0" cellspacing="0" 
+      cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="90" style="text-indent: 1em;"><SPAN id="Repeater1_ctl02_Label_SList_Word">相似文献列表</SPAN> 
+                                                        </TD>
+          <TD width="100" class="n_table_jiebf_fzb">                           
+                                 文字复制比：                                          
+               </TD>
+          <TD width="150">
+            <DIV class="n_jcjg_am">56.5%(3396)</DIV></TD>
+          <TD class="n_table_jiebf_fzb" style="text-align: left;">疑似剽窃观点（0）    
+                                                     
+  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       1                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=KXTS201101002&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">可信编译理论及其核心实现技术:研究综述</A>                                    
+               </TD>
+    <TD class="n_xu_d n_text_red_d">22.6%（1359）                                
+                   </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               何炎祥;吴伟;刘陶;李清安;陈勇;胡明昊;刘健博;石谦;                                      
+                 - 《计算机科学与探索》-                                                 
+      2011-01-15                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       2                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">可信编译理论及其核心实现技术研究综述 - 豆丁网        
+                                           </TD>
+    <TD class="n_xu_d n_text_red_d">22.4%（1345）                                
+                   </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://www.docin.com/p-155522094.html" 
+      target="_blank">http://www.docin.com/p-155522094.html</A>）》-               
+                                        2015                                     
+              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       3                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JFYZ201507014&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">软件模型检测中的抽象模型研究综述</A>                                       
+            </TD>
+    <TD class="n_xu_d n_text_red_d">8.8%（529）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               魏欧;石玉峰;徐丙凤;黄志球;陈哲;                                                
+       - 《计算机研究与发展》-                                                 2015-07-15  
+                                                 </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       4                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JSJK201008002&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">可信编译器关键技术研究</A>                                            
+     </TD>
+    <TD class="n_xu_d n_text_red_d">8.3%（497）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               何炎祥;刘陶;吴伟;                                                 - 
+      《计算机工程与科学》-                                                 2010-08-15     
+                                              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       5                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JSJA2014S1083&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">可信编译器构造的翻译确认方法简述</A>                                       
+            </TD>
+    <TD class="n_xu_d n_text_red_d">                                           
+           8.1%（485）                                             </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">刘洋;杨斐;石刚;闫鑫;王生原;董渊;                    
+                                   - 《计算机科学》-                                    
+                   2014-06-15                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       6                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=RJXB200908007&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">基于分离逻辑的程序验证技术</A>                                          
+         </TD>
+    <TD class="n_xu_d n_text_red_d">6.7%（401）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               黄达明;曾庆凯;                                                 - 
+      《软件学报》-                                                 2009-08-15         
+                                          </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       7                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=2005121383.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=" 
+      target="_blank">基于形式语义的构件组装与演化研究</A>                                       
+            </TD>
+    <TD class="n_xu_d n_text_red_d">5.5%（333）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               龚洪泉(导师：钱乐秋)                                                 - 
+      《复旦大学博士论文》-                                                 2005-04-30     
+                                              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       8                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      092031139贾书贵                                             
+    </TD>
+    <TD class="n_xu_d n_text_red_d">4.9%（294）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               贾书贵                                                 - 
+      《学术论文联合比对库》-                                                 2012-04-12    
+                                               </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       9                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=2009260289.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">Isabelle定理证明器的剖析及其在PAR方法/PAR平台中的应用</A>                     
+                              </TD>
+    <TD class="n_xu_d n_text_red_d">4.0%（243）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               游珍(导师：薛锦云)                                                 - 
+      《江西师范大学硕士论文》-                                                 2009-05-01   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       10                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1011129391.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">多线程离散事件模拟语言在PVS中的建模与验证</A>                                 
+                  </TD>
+    <TD class="n_xu_d n_text_red_d">3.7%（220）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               朱罕(导师：朱惠彪)                                                 - 
+      《华东师范大学硕士论文》-                                                 2011-03-01   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       11                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=WJSY201011008&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">一种软件模型检测方法及其原型系统</A>                                       
+            </TD>
+    <TD class="n_xu_d n_text_red_d">3.5%（210）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               顾滨兵;                                                 - 《微计算机应用》-  
+                                                     2010-11-15                  
+                                 </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       12                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JSJA200612067&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">基于抽象-验证-细化范例的软件模型检测</A>                                    
+               </TD>
+    <TD class="n_xu_d n_text_red_d">3.2%（190）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               刘吉锋;孙吉贵;                                                 - 
+      《计算机科学》-                                                 2006-12-25        
+                                           </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       13                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=2010201772.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">基于PVS的自稳定算法形式化分析</A>                                       
+            </TD>
+    <TD class="n_xu_d n_text_red_d">3.1%（184）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               毛玲炤(导师：傅育熙)                                                 - 
+      《上海交通大学硕士论文》-                                                 2009-01-01   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       14                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=2009015168.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">基于形式化方法的软构件接口规范</A>                                        
+           </TD>
+    <TD class="n_xu_d n_text_red_d">2.7%（163）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               林燕芬(导师：潘孝铭)                                                 - 
+      《华侨大学硕士论文》-                                                 2007-10-01     
+                                              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       15                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JYRJ200708005&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">定理证明辅助工具Isabelle剖析与应用</A>                                  
+                 </TD>
+    <TD class="n_xu_d n_text_red_d">2.5%（153）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               郭慧梅;缪淮扣;陈怡海;                                                 - 
+      《计算机应用与软件》-                                                 2007-08-15     
+                                              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       16                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JSJC201019033&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">多核计算机上并行生成类测试用例</A>                                        
+           </TD>
+    <TD class="n_xu_d n_text_red_d">2.2%（135）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">吴惜华;钟诚;莫英红;唐金辉;                        
+                               - 《计算机工程》-                                        
+               2010-10-05                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       17                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JZCK201108043&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">基于Coq的微内核操作系统程序验证方法研究</A>                                  
+                 </TD>
+    <TD class="n_xu_d n_text_red_d">2.1%（125）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               张忠秋;董云卫;张雨;张凡;                                                 - 
+      《计算机测量与控制》-                                                 2011-08-25     
+                                              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       18                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1012443572.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">基于B方法建模及转换工具的研究与实现</A>                                     
+              </TD>
+    <TD class="n_xu_d n_text_red_d">1.8%（107）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">理文鹏(导师：侯红)                             
+                          - 《西北大学硕士论文》-                                          
+             2012-06-30                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       19                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      1101120592-王乐-基于Coq的软件安全性验证研究与实现-电子与通信工程-裴庆祺               
+                                    </TD>
+    <TD class="n_xu_d n_text_red_d">1.3%（77）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               王乐                                                 - 《学术论文联合比对库》- 
+                                                      2014-02-28                 
+                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       20                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JYRJ201005012&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">一个Object-Z规格说明的证明责任产生器</A>                                 
+                  </TD>
+    <TD class="n_xu_d n_text_red_d">1.3%（76）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               文志诚;贾峰;胡纯蓉;                                                 - 
+      《计算机应用与软件》-                                                 2010-05-15     
+                                              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       21                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=RJXB201402012&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">同步数据流语言可信编译器的构造</A>                                        
+           </TD>
+    <TD class="n_xu_d n_text_red_d">1.2%（75）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               石刚;王生原;董渊;嵇智源;甘元科;张玲波;张煜承;王蕾;杨斐;                                  
+                     - 《软件学报》-                                                 
+      2014-02-15                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       22                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JSJA2013S1016&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">现代模态逻辑在计算机科学中的应用研究</A>                                     
+              </TD>
+    <TD class="n_xu_d n_text_red_d">0.9%（55）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               陈志远;黄少滨;韩丽丽;                                                 - 
+      《计算机科学》-                                                 2013-06-15        
+                                           </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       23                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JYXH201002027&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">基于Promela的UML建模方法及其应用</A>                                  
+                 </TD>
+    <TD class="n_xu_d n_text_red_d">0.9%（55）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               舒良春;饶俊;肖美华;尹传文;                                                 - 
+      《计算机与现代化》-                                                 2010-02-15      
+                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       24                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1013353156.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">基于B方法的RFID中间件系统设计</A>                                      
+             </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（49）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               苏凡(导师：杜亚江)                                                 - 
+      《兰州交通大学硕士论文》-                                                 2013-05-01   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       25                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1013110710.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">安全协议多目标语言代码自动化实现的研究与实现</A>                                 
+                  </TD>
+    <TD class="n_xu_d n_text_red_d">0.5%（32）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               李帅团(导师：李兴华)                                                 - 
+      《西安电子科技大学硕士论文》-                                                 2012-02-01 
+                                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class="n_qwdz_ywnr">
+<TABLE class="n_bgd_biao" id="table_item_list" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE>
+<TABLE class="n_bgd_biao" id="table1" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE></DIV>
+<DIV class="n_bodymid_bf">
+<TABLE width="640" class="n_table_jiebf" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="25" height="30" class="n_bf_bt">                                
+          4.                                 </TD>
+    <TD width="499" class="n_text_block_bs"><A name="100091783_003"></A>       
+                                    第三章编译形式化验证与安全C编译器构建的设计_第1部分                  
+                     </TD>
+    <TD width="116" class="n_table_jiebf_zzs">                                 
+         总字数：<SPAN class="n_text_block_bs">10640</SPAN>                          
+             </TD></TR>
+  <TR>
+    <TD colspan="3">
+      <TABLE width="640" class="n_table_jiebfs" border="0" cellspacing="0" 
+      cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="90" style="text-indent: 1em;"><SPAN id="Repeater1_ctl03_Label_SList_Word">相似文献列表</SPAN> 
+                                                        </TD>
+          <TD width="100" class="n_table_jiebf_fzb">                           
+                                 文字复制比：                                          
+               </TD>
+          <TD width="150">
+            <DIV class="n_jcjg_am">4.2%(451)</DIV></TD>
+          <TD class="n_table_jiebf_fzb" style="text-align: left;">疑似剽窃观点（0）    
+                                                     
+  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       1                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=NJYD200606018&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">形式语义描述方法研究进展与评价</A>                                        
+           </TD>
+    <TD class="n_xu_d n_text_red_d">1.5%（158）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               张迎周;张卫丰;钱俊彦;                                                 - 
+      《南京邮电大学学报(自然科学版)》-                                                 
+      2006-12-30                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       2                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=SHDJ200703012&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">程序设计语言的形式语义研究进展</A>                                        
+           </TD>
+    <TD class="n_xu_d n_text_red_d">1.3%（135）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               计春雷;                                                 - 
+      《上海电机学院学报》-                                                 2007-09-15     
+                                              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       3                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      06_SY1206310_王琦                                            
+     </TD>
+    <TD class="n_xu_d n_text_red_d">0.9%（99）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               王琦                                                 - 《学术论文联合比对库》- 
+                                                      2014-11-24                 
+                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       4                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      06_SY1206301_尹顺顺                                           
+        </TD>
+    <TD class="n_xu_d n_text_red_d">                                           
+           0.9%（99）                                             </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">尹顺顺                                    
+                   - 《学术论文联合比对库》-                                                
+       2014-11-25                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       5                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=KXTS201101002&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">可信编译理论及其核心实现技术:研究综述</A>                                    
+               </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（84）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               何炎祥;吴伟;刘陶;李清安;陈勇;胡明昊;刘健博;石谦;                                      
+                 - 《计算机科学与探索》-                                                 
+      2011-01-15                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       6                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">可信编译理论及其核心实现技术研究综述 - 豆丁网        
+                                           </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（84）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://www.docin.com/p-155522094.html" 
+      target="_blank">http://www.docin.com/p-155522094.html</A>）》-               
+                                        2015                                     
+              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       7                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      20109130351769                                             
+    </TD>
+    <TD class="n_xu_d n_text_red_d">                                           
+           0.7%（75）                                             </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《学术论文联合比对库》-                         
+                              2013-04-21                                         
+          </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       8                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=ZXLJ201034138&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">谈形式语义学</A>                                             </TD>
+    <TD class="n_xu_d n_text_red_d">0.4%（39）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               陈月霞;                                                 - 《科技资讯》-    
+                                                   2010-12-03                    
+                               </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       9                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      32位PowerPC构架通用寄存器分析及总结&nbsp;一_追梦者                          
+                         </TD>
+    <TD class="n_xu_d n_text_red_d">0.4%（39）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://blog.sina.com.cn/s/blog_70dd16910100yjm3.html" 
+      target="_blank">http://blog.sina.com.cn/s/blog_70dd16910100yjm3.html</A>）》- 
+                                                      2013                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class="n_qwdz_ywnr">
+<TABLE class="n_bgd_biao" id="table_item_list" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE>
+<TABLE class="n_bgd_biao" id="table1" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE></DIV>
+<DIV class="n_bodymid_bf">
+<TABLE width="640" class="n_table_jiebf" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="25" height="30" class="n_bf_bt">                                
+          5.                                 </TD>
+    <TD width="499" class="n_text_block_bs"><A name="100091783_004"></A>       
+                                    第三章编译形式化验证与安全C编译器构建的设计_第2部分                  
+                     </TD>
+    <TD width="116" class="n_table_jiebf_zzs">                                 
+         总字数：<SPAN class="n_text_block_bs">2094</SPAN>                           
+            </TD></TR>
+  <TR>
+    <TD colspan="3">
+      <TABLE width="640" class="n_table_jiebfs" border="0" cellspacing="0" 
+      cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="90" style="text-indent: 1em;"><SPAN id="Repeater1_ctl04_Label_SList_Word">相似文献列表</SPAN> 
+                                                        </TD>
+          <TD width="100" class="n_table_jiebf_fzb">                           
+                                 文字复制比：                                          
+               </TD>
+          <TD width="150">
+            <DIV class="n_jcjg_am">0%(0)</DIV></TD>
+          <TD class="n_table_jiebf_fzb" style="text-align: left;">疑似剽窃观点（0）    
+                                                     
+  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_qwdz_ywnr">
+<TABLE class="n_bgd_biao" id="table_item_list" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE>
+<TABLE class="n_bgd_biao" id="table1" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE></DIV>
+<DIV class="n_bodymid_bf">
+<TABLE width="640" class="n_table_jiebf" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="25" height="30" class="n_bf_bt">                                
+          6.                                 </TD>
+    <TD width="499" class="n_text_block_bs"><A name="100091783_005"></A>       
+                                    第四章_第1部分                                 </TD>
+    <TD width="116" class="n_table_jiebf_zzs">                                 
+         总字数：<SPAN class="n_text_block_bs">12639</SPAN>                          
+             </TD></TR>
+  <TR>
+    <TD colspan="3">
+      <TABLE width="640" class="n_table_jiebfs" border="0" cellspacing="0" 
+      cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="90" style="text-indent: 1em;"><SPAN id="Repeater1_ctl05_Label_SList_Word">相似文献列表</SPAN> 
+                                                        </TD>
+          <TD width="100" class="n_table_jiebf_fzb">                           
+                                 文字复制比：                                          
+               </TD>
+          <TD width="150">
+            <DIV class="n_jcjg_am">1.5%(191)</DIV></TD>
+          <TD class="n_table_jiebf_fzb" style="text-align: left;">疑似剽窃观点（0）    
+                                                     
+  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       1                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      06_SY1206310_王琦                                            
+     </TD>
+    <TD class="n_xu_d n_text_red_d">0.9%（109）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               王琦                                                 - 《学术论文联合比对库》- 
+                                                      2014-11-24                 
+                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       2                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      06_SY1206301_尹顺顺                                           
+        </TD>
+    <TD class="n_xu_d n_text_red_d">0.9%（109）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               尹顺顺                                                 - 
+      《学术论文联合比对库》-                                                 2014-11-25    
+                                               </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       3                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">百科知识_印刷百科_科印印刷网                 
+                                  </TD>
+    <TD class="n_xu_d n_text_red_d">0.3%（40）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://wiki.keyin.cn/index.php/%e4%b8%8a%e4%b8%8b%e6%96%87%e6%97%a0%e5%85%b3%e6%96%87%e6%b3%95" 
+      target="_blank">http://wiki.keyin.cn/index.php/%e4%b8%8a%e4%b8%8b%e6%96%87%e6%97%a0%e5%85%b3%e6%96%87%e6%b3%95</A>）》- 
+                                                      2010                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       4                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      SA11011941_郏全_1                                            
+     </TD>
+    <TD class="n_xu_d n_text_red_d">                                           
+           0.3%（40）                                             </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               郏全                                                 - 《学术论文联合比对库》- 
+                                                      2014-05-09                 
+                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       5                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      SA11011941_郏全_2                                            
+     </TD>
+    <TD class="n_xu_d n_text_red_d">                                           
+           0.3%（40）                                             </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               郏全                                                 - 《学术论文联合比对库》- 
+                                                      2014-05-12                 
+                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       6                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      20084625_王英文[2]                                            
+     </TD>
+    <TD class="n_xu_d n_text_red_d">                                           
+           0.3%（40）                                             </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               王英文                                                 - 
+      《学术论文联合比对库》-                                                 2012-05-08    
+                                               </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       7                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=2009065283.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=" 
+      target="_blank">基于内存自动机与模式的动态引擎构造技术研究</A>                                  
+                 </TD>
+    <TD class="n_xu_d n_text_red_d">0.3%（38）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               胡圣明(导师：陈平)                                                 - 
+      《西安电子科技大学博士论文》-                                                 2008-12-01 
+                                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       8                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">自上而下文法分析 - 豆丁网                  
+                                 </TD>
+    <TD class="n_xu_d n_text_red_d">0.3%（37）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://www.docin.com/p-280680198.html" 
+      target="_blank">http://www.docin.com/p-280680198.html</A>）》-               
+                                        2015                                     
+              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       9                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">程序语言部分_亮亮                       
+                            </TD>
+    <TD class="n_xu_d n_text_red_d">0.3%（34）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://blog.sina.com.cn/s/blog_6c339a4801014hci.html" 
+      target="_blank">http://blog.sina.com.cn/s/blog_6c339a4801014hci.html</A>）》- 
+                                                      2012                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       10                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      2012-2013年计算机软件水平考试系统分析师经典教程-百度文库                          
+                         </TD>
+    <TD class="n_xu_d n_text_red_d">0.3%（34）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://wenku.baidu.com/view/789092eeb8f67c1cfad6b887.html" 
+      target="_blank">http://wenku.baidu.com/view/789092eeb8f67c1cfad6b887.html</A>）》- 
+                                                      2012                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       11                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">系统分析师经典教程专题二：程序语言部分.doc 
+      -max上传文档投稿赚钱-文档C2C交易模式-100%分成比例文档分享网                                       
+            </TD>
+    <TD class="n_xu_d n_text_red_d">0.3%（34）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://m.book118.com/html/2015/1001/26505226.shtm" 
+      target="_blank">http://m.book118.com/html/2015/1001/26505226.shtm</A>）》-   
+                                                    2016                         
+                          </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       12                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      SA09225318吴璠                                             
+    </TD>
+    <TD class="n_xu_d n_text_red_d">0.3%（33）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《学术论文联合比对库》-                         
+                              2012-03-21                                         
+          </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       13                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1011121741.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">基于抽象语法树的软件抄袭检测算法研究</A>                                     
+              </TD>
+    <TD class="n_xu_d n_text_red_d">0.2%（30）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               李建松(导师：崔宝江)                                                 - 
+      《北京邮电大学硕士论文》-                                                 2011-01-06   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       14                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1012378111.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">基于领域本体和句框架的主观题自动阅卷算法研究</A>                                 
+                  </TD>
+    <TD class="n_xu_d n_text_red_d">0.2%（30）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               苏方方(导师：朱新华)                                                 - 
+      《广西师范大学硕士论文》-                                                 2012-04-01   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       15                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=2010081933.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">基于有限自动机的航班计划编排技术研究</A>                                     
+              </TD>
+    <TD class="n_xu_d n_text_red_d">0.2%（30）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               阚海建(导师：夏洪山)                                                 - 
+      《南京航空航天大学硕士论文》-                                                 2009-01-01 
+                                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class="n_qwdz_ywnr">
+<TABLE class="n_bgd_biao" id="table_item_list" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE>
+<TABLE class="n_bgd_biao" id="table1" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE></DIV>
+<DIV class="n_bodymid_bf">
+<TABLE width="640" class="n_table_jiebf" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="25" height="30" class="n_bf_bt">                                
+          7.                                 </TD>
+    <TD width="499" class="n_text_block_bs"><A name="100091783_006"></A>       
+                                    第四章_第2部分                                 </TD>
+    <TD width="116" class="n_table_jiebf_zzs">                                 
+         总字数：<SPAN class="n_text_block_bs">6230</SPAN>                           
+            </TD></TR>
+  <TR>
+    <TD colspan="3">
+      <TABLE width="640" class="n_table_jiebfs" border="0" cellspacing="0" 
+      cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="90" style="text-indent: 1em;"><SPAN id="Repeater1_ctl06_Label_SList_Word">相似文献列表</SPAN> 
+                                                        </TD>
+          <TD width="100" class="n_table_jiebf_fzb">                           
+                                 文字复制比：                                          
+               </TD>
+          <TD width="150">
+            <DIV class="n_jcjg_am">0.9%(53)</DIV></TD>
+          <TD class="n_table_jiebf_fzb" style="text-align: left;">疑似剽窃观点（0）    
+                                                     
+  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       1                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      C语言章节练习题及答案解析-百度文库                                         
+          </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://wenku.baidu.com/view/5549601b964bcf84b9d57b02.html" 
+      target="_blank">http://wenku.baidu.com/view/5549601b964bcf84b9d57b02.html</A>）》- 
+                                                      2012                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       2                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">二级C笔试考试题库(包你过全国计算机二级笔试)-百度文库    
+                                               </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://wenku.baidu.com/view/79de270c79563c1ec5da7169.html" 
+      target="_blank">http://wenku.baidu.com/view/79de270c79563c1ec5da7169.html</A>）》- 
+                                                      2012                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       3                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      C语言章节练习题-百度文库                                             
+    </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://wenku.baidu.com/view/b18074313968011ca30091b1.html" 
+      target="_blank">http://wenku.baidu.com/view/b18074313968011ca30091b1.html</A>）》- 
+                                                      2012                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       4                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=DZZZ201313080&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">再谈二级C语言之标识符的概念</A>                                         
+          </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               吴宏杰;朱正清;张跃辉;迟晓丽;王铮;                                               
+        - 《电子制作》-                                                 2013           
+                                        </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       5                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JJYX200504050&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">《编译原理》教学方法探析</A>                                           
+        </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               余玛俐;张海;                                                 - 
+      《九江学院学报(自然科学版)》-                                                 2005      
+                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       6                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=QXJY200704004&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">浅谈大气科学类专业《C语言》教学体会</A>                                     
+              </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               王新芝;                                                 - 《气象教育与科技》- 
+                                                      2007                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       7                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=DZZZ200905027&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">跳舞机器人(下)</A>                                             
+    </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               刘晋峰;                                                 - 《电子制作》-    
+                                                   2009                          
+                         </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       8                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1011053231.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">高压共轨柴油机管理系统传动协调的策略研究</A>                                   
+                </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               刘俊明(导师：申立中)                                                 - 
+      《昆明理工大学硕士论文》-                                                 2009         
+                                          </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       9                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1011053234.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">高压共轨柴油机燃油喷射压力控制策略研究</A>                                    
+               </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               王金虎(导师：申立中)                                                 - 
+      《昆明理工大学硕士论文》-                                                 2009         
+                                          </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       10                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=2008112019.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">电控高压共轨柴油机起动和怠速控制系统的研究和开发</A>                               
+                    </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               程婷婷(导师：申立中)                                                 - 
+      《昆明理工大学硕士论文》-                                                 2008         
+                                          </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       11                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=2008112020.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">高压共轨柴油机燃油喷射系统软件设计与研究</A>                                   
+                </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               江军(导师：颜文胜)                                                 - 
+      《昆明理工大学硕士论文》-                                                 2008         
+                                          </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       12                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      2005年考前密卷——选择61-80题                                        
+           </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://www.diyifanwen.com/jisuanjikaoshi/djks/0651303263694840.htm" 
+      target="_blank">http://www.diyifanwen.com/jisuanjikaoshi/djks/0651303263694840.htm</A>）》- 
+                                                      2009                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       13                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">真题与预测试题/试题天天练试题-快乐阅读网           
+                                        </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://www.zuowenw.com/jsjks/pc2/c/cyuyanmnsht/2009/12/07/747314.html" 
+      target="_blank">http://www.zuowenw.com/jsjks/pc2/c/cyuyanmnsht/2009/12/07/747314.html</A>）》- 
+                                                      2011                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       14                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      05年9月等级考试二级C语言考前密卷(三)-计算机等级二级考试网-前程99学习网                   
+                                </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://www.qc99.com/pc/erji/c/shiti/200509/4093.html" 
+      target="_blank">http://www.qc99.com/pc/erji/c/shiti/200509/4093.html</A>）》- 
+                                                      2011                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       15                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      05年9月等级考试二级C语言考前密卷(三)_2006年计算机等级考试_计算机类考试                  
+                                 </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://www.exam8.com/computer/djks/monishiti/2j/200509/18847.html" 
+      target="_blank">http://www.exam8.com/computer/djks/monishiti/2j/200509/18847.html</A>）》- 
+                                                      2010                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       16                                             </TD>
+    <TD width="480" 
+      class="n_text_G2 huanhang">计算机等级二级C语言模拟试题1(二)第2页-计算机等级考试-考试吧               
+                                    </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（50）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://www.exam8.com/computer/djks/dj2/c/moni/200703/1302620_2.html" 
+      target="_blank">http://www.exam8.com/computer/djks/dj2/c/moni/200703/1302620_2.html</A>）》- 
+                                                      2011                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       17                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      C语言学习大全(北京大学)-百度文库                                         
+          </TD>
+    <TD class="n_xu_d n_text_red_d">0.7%（46）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《互联网文档资源（<A href="http://wenku.baidu.com/view/ff001fb9c77da26925c5b0c8.html" 
+      target="_blank">http://wenku.baidu.com/view/ff001fb9c77da26925c5b0c8.html</A>）》- 
+                                                      2012                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       18                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      java与c_互动百科                                             
+</TD>
+    <TD class="n_xu_d n_text_red_d">0.7%（46）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://www.hudong.com/wiki/java%e4%b8%8ec" 
+      target="_blank">http://www.hudong.com/wiki/java%e4%b8%8ec</A>）》-           
+                                                                                 
+             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       19                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">重温C语言_C语言教程 - 第一章 
+      C语言概论_C语言程序设计教程                                             </TD>
+    <TD class="n_xu_d n_text_red_d">0.7%（46）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://www.21shipin.com/html/94674.shtml" 
+      target="_blank">http://www.21shipin.com/html/94674.shtml</A>）》-            
+                                                                                 
+            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       20                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      C语言初学者入门讲座 - 『编程开发』 - 软件技术交流 -  流浪者家园 
+      电脑技术论坛_精品软件_电脑学习_休闲娱乐                                             </TD>
+    <TD class="n_xu_d n_text_red_d">0.7%（46）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://www.liulanghome.com/bbs/thread-16161-1-1.html" 
+      target="_blank">http://www.liulanghome.com/bbs/thread-16161-1-1.html</A>）》- 
+                                                      2010                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       21                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      C程序设计语言概论_操作系统_软件频道                                        
+           </TD>
+    <TD class="n_xu_d n_text_red_d">0.7%（46）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://soft.zdnet.com.cn/software_zone/2007/1028/587071.shtml" 
+      target="_blank">http://soft.zdnet.com.cn/software_zone/2007/1028/587071.shtml</A>）》- 
+                                                      2012                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       22                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=DNZS200515036&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">全国计算机等级考试二级(C语言)应对策略</A>                                   
+                </TD>
+    <TD class="n_xu_d n_text_red_d">0.7%（41）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               唐军芳                                                 - 《电脑知识与技术》-  
+                                                     2005                        
+                           </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       23                                             </TD>
+    <TD width="480" 
+      class="n_text_G2 huanhang">计算机等考二级C语言精编教程：第二章(2)-计算机等级考试-考试吧               
+                                    </TD>
+    <TD class="n_xu_d n_text_red_d">0.6%（38）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://www.exam8.com/computer/djks/dj2/c/ziliao/201102/1874658.html" 
+      target="_blank">http://www.exam8.com/computer/djks/dj2/c/ziliao/201102/1874658.html</A>）》- 
+                                                      2011                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       24                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      ★计算机等级考试二级C语言精编教程 5-计算机等级考试(NCRE)-无忧考网                     
+                              </TD>
+    <TD class="n_xu_d n_text_red_d">0.6%（38）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://www.51test.net/show/1808920.html" 
+      target="_blank">http://www.51test.net/show/1808920.html</A>）》-             
+                                          2011                                   
+                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       25                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      2010年9月计算机等级考试二级C语言预测试题(4)第8页-计算机等级考试-考试吧                  
+                                 </TD>
+    <TD class="n_xu_d n_text_red_d">0.6%（38）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">- 《网络（<A href="http://www.exam8.com/computer/djks/dj2/c/moni/201009/1623000_8.html" 
+      target="_blank">http://www.exam8.com/computer/djks/dj2/c/moni/201009/1623000_8.html</A>）》- 
+                                                      2011                       
+                            </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class="n_qwdz_ywnr">
+<TABLE class="n_bgd_biao" id="table_item_list" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE>
+<TABLE class="n_bgd_biao" id="table1" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE></DIV>
+<DIV class="n_bodymid_bf">
+<TABLE width="640" class="n_table_jiebf" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="25" height="30" class="n_bf_bt">                                
+          8.                                 </TD>
+    <TD width="499" class="n_text_block_bs"><A name="100091783_007"></A>       
+                                    第五章编译验证工具的设计与实现_第1部分                         
+              </TD>
+    <TD width="116" class="n_table_jiebf_zzs">                                 
+         总字数：<SPAN class="n_text_block_bs">11801</SPAN>                          
+             </TD></TR>
+  <TR>
+    <TD colspan="3">
+      <TABLE width="640" class="n_table_jiebfs" border="0" cellspacing="0" 
+      cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="90" style="text-indent: 1em;"><SPAN id="Repeater1_ctl07_Label_SList_Word">相似文献列表</SPAN> 
+                                                        </TD>
+          <TD width="100" class="n_table_jiebf_fzb">                           
+                                 文字复制比：                                          
+               </TD>
+          <TD width="150">
+            <DIV class="n_jcjg_am">0.3%(41)</DIV></TD>
+          <TD class="n_table_jiebf_fzb" style="text-align: left;">疑似剽窃观点（0）    
+                                                     
+  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       1                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=DLXZ201402023&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=" 
+      target="_blank">基于ArcEngine的城市绿地生态功能动态评估系统的设计与实现</A>                       
+                            </TD>
+    <TD class="n_xu_d n_text_red_d">0.3%（41）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               姜珊;李蕾;张丽君;张杰;徐婷;李瑞改;                                              
+         - 《智能计算机与应用》-                                                 
+      2014-04-01                                             </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class="n_qwdz_ywnr">
+<TABLE class="n_bgd_biao" id="table_item_list" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE>
+<TABLE class="n_bgd_biao" id="table1" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE></DIV>
+<DIV class="n_bodymid_bf">
+<TABLE width="640" class="n_table_jiebf" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="25" height="30" class="n_bf_bt">                                
+          9.                                 </TD>
+    <TD width="499" class="n_text_block_bs"><A name="100091783_008"></A>       
+                                    第五章编译验证工具的设计与实现_第2部分                         
+              </TD>
+    <TD width="116" class="n_table_jiebf_zzs">                                 
+         总字数：<SPAN class="n_text_block_bs">15446</SPAN>                          
+             </TD></TR>
+  <TR>
+    <TD colspan="3">
+      <TABLE width="640" class="n_table_jiebfs" border="0" cellspacing="0" 
+      cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="90" style="text-indent: 1em;"><SPAN id="Repeater1_ctl08_Label_SList_Word">相似文献列表</SPAN> 
+                                                        </TD>
+          <TD width="100" class="n_table_jiebf_fzb">                           
+                                 文字复制比：                                          
+               </TD>
+          <TD width="150">
+            <DIV class="n_jcjg_am">4.5%(699)</DIV></TD>
+          <TD class="n_table_jiebf_fzb" style="text-align: left;">疑似剽窃观点（0）    
+                                                     
+  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       1                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      06_ZY1206128_吴文娟                                           
+        </TD>
+    <TD class="n_xu_d n_text_red_d">2.1%（328）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               吴文娟                                                 - 
+      《学术论文联合比对库》-                                                 2014-11-26    
+                                               </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       2                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1016158851.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">秦岭中段山脊油松林群落及种群结构和动态研究</A>                                  
+                 </TD>
+    <TD class="n_xu_d n_text_red_d">2.0%（306）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               黄雅昆(导师：王得祥)                                                 - 
+      《西北农林科技大学硕士论文》-                                                 2016-05-01 
+                                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       3                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang">                                
+                      06_ZY1206128_吴文娟                                           
+        </TD>
+    <TD class="n_xu_d n_text_red_d">1.9%（299）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               吴文娟                                                 - 
+      《学术论文联合比对库》-                                                 2014-11-21    
+                                               </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       4                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1016116126.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">基于社交媒体的我国房地产企业客户关系管理研究</A>                                 
+                  </TD>
+    <TD class="n_xu_d n_text_red_d">1.7%（263）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               杜普龙(导师：郝生跃)                                                 - 
+      《北京交通大学硕士论文》-                                                 2016-06-24   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       5                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1016140763.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">In-N共掺p型ZnMgO薄膜的制备及稳定性研究</A>                               
+                    </TD>
+    <TD class="n_xu_d n_text_red_d">1.5%（224）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               张红(导师：孔春阳)                                                 - 
+      《重庆师范大学硕士论文》-                                                 2016-04-01   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       6                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1016906414.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">基于行人生物动力学模型柔性楼梯的人致振动舒适度研究</A>                              
+                     </TD>
+    <TD class="n_xu_d n_text_red_d">1.0%（158）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               陈凯(导师：杜永峰)                                                 - 
+      《兰州理工大学硕士论文》-                                                 2016-04-18   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       7                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1016768438.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">克里雅绿洲人居环境适宜性时空演变分析</A>                                     
+              </TD>
+    <TD class="n_xu_d n_text_red_d">0.8%（131）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               关靖云(导师：瓦哈甫·哈力克)                                                 - 
+      《新疆大学硕士论文》-                                                 2016-05-27     
+                                              </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       8                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1016208071.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">健脾益气固表法治疗慢性荨麻疹的系统评价</A>                                    
+               </TD>
+    <TD class="n_xu_d n_text_red_d">0.7%（107）                                  
+                 </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               杜倚琪(导师：卢传坚)                                                 - 
+      《广州中医药大学硕士论文》-                                                 2016-04-01  
+                                                 </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       9                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1012021023.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">面向武器贸易关系的社会网络分析技术研究</A>                                    
+               </TD>
+    <TD class="n_xu_d n_text_red_d">0.2%（34）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               俞淮(导师：毛羽刚)                                                 - 
+      《国防科学技术大学硕士论文》-                                                 2011-11-01 
+                                                  </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       10                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1011270093.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">接地网冲击阻抗的理论研究</A>                                           
+        </TD>
+    <TD class="n_xu_d n_text_red_d">0.2%（33）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               朱锴(导师：刘春)                                                 - 
+      《华中科技大学硕士论文》-                                                 2009-06-30   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       11                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1012002982.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">K型间隙CR节点滞回性能的有限元分析</A>                                     
+              </TD>
+    <TD class="n_xu_d n_text_red_d">0.2%（31）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               刘爽(导师：武振宇)                                                 - 
+      《哈尔滨工业大学硕士论文》-                                                 2011-06-01  
+                                                 </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       12                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1016909387.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=" 
+      target="_blank">摆线齿准双曲面齿轮齿面啮合性能分析及设计技术研究</A>                               
+                    </TD>
+    <TD class="n_xu_d n_text_red_d">0.2%（29）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               杜进辅(导师：张永振;方宗德)                                                 - 
+      《西北工业大学博士论文》-                                                 2015-09-01   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV>
+<DIV class="n_xu">
+<TABLE class="n_table_a" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20" class="n_xu_a n_text_back_a">                               
+                       13                                             </TD>
+    <TD width="480" class="n_text_G2 huanhang"><A href="http://www.cnki.net/kcms/detail/detail.aspx?filename=1013150288.nh&amp;dbname=cdmdtotal&amp;dbcode=cmfd&amp;v=" 
+      target="_blank">基于虚拟装配的曲轴锻件输送线的设计</A>                                      
+             </TD>
+    <TD class="n_xu_d n_text_red_d">0.2%（29）                                   
+                </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class="n_text_block_b huanhang">                                       
+               王晓灿(导师：胡习之;张建斌)                                                 - 
+      《华南理工大学硕士论文》-                                                 2012-11-01   
+                                                </TD>
+    <TD class="n_xu_da">是否引证：<SPAN class="n_text_yz">否</SPAN>                  
+                                 </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class="n_qwdz_ywnr">
+<TABLE class="n_bgd_biao" id="table_item_list" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE>
+<TABLE class="n_bgd_biao" id="table1" style="border-collapse: collapse; table-layout: fixed;" 
+border="0" cellspacing="0" cellpadding="0"></TABLE></DIV></DIV><!-----------------------------------以上为第五部分------------------------------------------------> 
+                <!------------------------------------以下为说明部分5.0-----------------------------------------------> 
+        
+<DIV class="n_bodyfooter">
+<DIV id="isjianjieN"></DIV>
+<TABLE width="640" class="n_sm_table" border="0" cellspacing="0" 
+cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="43" class="n_sm">说明：                     </TD>
+    <TD class="n_sms" colspan="5">1.指标是由系统根据《学术论文不端行为的界定标准》自动生成的               
+            </TD></TR>
+  <TR>
+    <TD width="43" class="n_sm"></TD>
+    <TD class="n_sms" colspan="5">2.本报告单仅对您所选择比对资源范围内检测结果负责                    
+           </TD></TR>
+  <TR>
+    <TD width="43" class="n_sm"></TD>
+    <TD width="176" class="n_sms">3.Email：<A href="mailto:amlc@cnki.net" 
+      target="_blank">amlc@cnki.net</A>                         </TD>
+    <TD width="25" class="n_sms"><IMG src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/sina.gif"> 
+                              </TD>
+    <TD width="213" class="n_sms"><A href="http://e.weibo.com/u/3194559873" 
+      target="_blank">http://e.weibo.com/u/3194559873</A>                        
+     </TD>
+    <TD width="25" class="n_sms"><IMG src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/tx.gif"> 
+                              </TD>
+    <TD width="158" class="n_sms"><A href="http://t.qq.com/CNKI_kycx" target="_blank">http://t.qq.com/CNKI_kycx</A> 
+                              </TD></TR></TBODY></TABLE>
+<TABLE width="640" class="n_sm_tables" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="40"></TD>
+    <TD width="20"><IMG title="打印" class="n_print" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/n_btn_print.gif"> 
+                          </TD>
+    <TD width="40"><A class="n_table_prints n_print" href="javascript:print();">打印</A> 
+                          </TD>
+    <TD width="20"><IMG title="保存" class="n_print" src="3789128_陈志伟_安全C编译器的构建和形式验证方法的研究与实现-文本复制检测报告单（简洁）_files/n_btn_save.gif"> 
+                          </TD>
+    <TD width="40"><A class="n_table_prints  n_print" 
+      href="javascript:s();">保存</A>                     </TD>
+    <TD width="340"></TD>
+    <TD><A class="n_dz" href="http://check.cnki.net/" 
+      target="_blank">http://check.cnki.net/</A>                     
+  </TD></TR></TBODY></TABLE></DIV></DIV></FORM></BODY></HTML>
